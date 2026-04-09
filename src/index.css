@@ -1,0 +1,44 @@
+:root {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  color: #1f232b;
+  background-color: #e9e9ea;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e9e9ea;
+}
+
+.app-shell {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 20px 28px;
+}
+
+@media (max-width: 767px) {
+  .app-shell {
+    align-items: flex-start;
+    padding: 24px 12px;
+  }
+}

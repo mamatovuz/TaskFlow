@@ -1,0 +1,178 @@
+.login-page {
+  width: 100%;
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #1f232b;
+  margin-left: 550px;
+  margin-top: 150px;
+}
+
+.login-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.logobuo {
+	width: 200px;
+}
+.login-logo-slot {
+  width: 24px;
+  height: 24px;
+  border: 1.5px dashed #8f93ab;
+  border-radius: 5px;
+  background: #f2f2f4;
+}
+
+.login-brand-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.login-title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  text-align: center;
+}
+
+.login-subtitle {
+  margin: 12px 0 30px;
+  font-size: 15px;
+  line-height: 1.35;
+  color: #4f5f75;
+  text-align: center;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.login-field {
+  width: 100%;
+  background: #e2e4e8;
+  border-radius: 8px;
+  padding: 16px 14px;
+}
+
+.login-field-label-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.login-field input {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #1f232b;
+  font-family: inherit;
+  padding: 0;
+}
+
+.login-field input::placeholder {
+  color: #4f5f75;
+  opacity: 1;
+}
+
+.login-submit {
+  margin-top: 2px;
+  height: 56px;
+  border: 0;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #5647ea 0%, #584bf4 100%);
+  color: #f4f5ff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login-footer-text {
+  margin: 18px 0 0;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #4f5f75;
+  text-align: center;
+}
+
+.login-link {
+  color: #4239eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .login-page {
+    max-width: 320px;
+    padding-top: 150px;
+  }
+
+  .login-brand {
+    margin-bottom: 10px;
+  }
+
+  .login-logo-slot {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+  }
+
+  .login-brand-name {
+    font-size: 16px;
+  }
+
+  .login-title {
+    width: 100%;
+    font-size: 28px;
+    text-align: left;
+  }
+
+  .login-subtitle {
+    margin: 8px 0 18px;
+    width: 100%;
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .login-form {
+    gap: 10px;
+  }
+
+  .login-field {
+    border-radius: 6px;
+    padding: 11px 10px;
+  }
+
+  .login-field input {
+    font-size: 12px;
+  }
+
+  .login-submit {
+    height: 42px;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+
+  .login-footer-text {
+    margin-top: 12px;
+    font-size: 12px;
+  }
+}

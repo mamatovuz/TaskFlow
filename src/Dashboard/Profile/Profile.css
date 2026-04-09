@@ -1,0 +1,168 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	min-height: 100vh;
+	width: 100%;
+	background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+	padding: 20px;
+}
+
+
+.Ortga {
+	align-self: flex-start;
+
+	cursor: pointer;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+.Settings {
+	margin-left: auto;
+	font-size: 20px;
+	margin-top: -30px;
+	cursor: pointer;
+}
+.ProfilePage {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+}
+
+
+.logo img {
+	height: 180px;
+	width: 180px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 4px solid #fff;
+	margin-bottom: 20px;
+}
+
+
+.Info {
+	width: 100%;
+	max-width: 400px;
+	background: #ffffff;
+	color: #000;
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.Info h1 {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.Info h2,
+.Info h3 {
+	margin: 10px 0;
+	font-weight: 500;
+}
+
+.Info b {
+	color: #0b0303;
+}
+
+/* --- oldingi kod --- */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-container {
+  background: #1f1f1f;
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-body {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-body label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.modal-body input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  border: none;
+}
+
+.save-btn {
+  padding: 10px;
+  background: #00BFFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.save-btn:hover {
+  background: #009acd;
+}
+@media (max-width: 500px) {
+	.ProfilePage {
+		font-size: 22px;
+	}
+
+	.logo img {
+		height: 140px;
+		width: 140px;
+	}
+
+	.Info {
+		padding: 15px;
+	}
+}
