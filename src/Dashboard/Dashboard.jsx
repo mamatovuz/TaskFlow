@@ -62,7 +62,7 @@ const Dashboard = () => {
         
         <h6>{task.date}</h6>
         {task.status !== 'done' && (
-          <i id='ong' onClick={() => moveTask(task.id)} className="fa-solid fa-arrow-right fa-bounce"></i>
+          <i id='ong' onClick={() => moveTask(task.id)} className="fa-solid fa-arrow-right"></i>
         )}
         {task.status === 'done' && (
           <i id='belet' onClick={() => deleteTask(task.id)} className="fa-solid fa-trash-can fa-bounce"></i> 
@@ -75,7 +75,7 @@ const Dashboard = () => {
     <div>
       <nav>
         <div onClick={Ochish} className="logobu">
-          <h1 className='logobuo'>TaskFlow</h1>
+  <h1 className='logobuo'>TaskFlow</h1>
         </div>
 
         <div id='su' className="namee" onClick={openProfile}>

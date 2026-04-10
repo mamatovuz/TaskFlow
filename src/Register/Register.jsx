@@ -42,7 +42,7 @@ function Register() {
   return (
     <section className="register-page">
       <div className="register-brand">
-        <h1>TaskFlow</h1>
+        <h1>Task</h1><h1 className='colorbu'>Flow </h1>
       </div>
 
       <h1 className="register-title">Create an account</h1>

@@ -24,7 +24,7 @@ const Profile = () => {
   const progressTasks = tasks.filter(t => t.status === 'progress').length;
   const doneTasks = tasks.filter(t => t.status === 'done').length;
 
-  // Modal state
+ 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [nameInput, setNameInput] = useState(fullName);
   const [phoneInput, setPhoneInput] = useState(phone);
@@ -37,13 +37,13 @@ const Profile = () => {
     localStorage.setItem('phone', phoneInput);
     alert("O'zgartirishlar saqlandi!");
     closeModal();
-    window.location.reload(); // sahifani yangilash
+    window.location.reload();
   };
 
   return (
     <div className="container">
       <div className='Ortga' onClick={Ortga}>
-        <i className="fa-solid fa-angles-left fa-bounce"></i>
+        <i className="fa-solid fa-angles-left"></i>
       </div>
 
       <div className='Settings' onClick={openModal}>

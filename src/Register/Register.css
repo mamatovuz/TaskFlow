@@ -11,10 +11,13 @@
 .logobuo {
 	width: 200px;
 }
+.colorbu {
+  display: flex;
+  color: #4239eb;
+}
 .register-brand {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 10px;
   margin-bottom: 14px;
 }
 

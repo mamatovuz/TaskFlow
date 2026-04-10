@@ -8,11 +8,13 @@
   margin-left: 550px;
   margin-top: 150px;
 }
-
+.colorbu {
+  display: flex;
+  color: #4239eb;
+}
 .login-brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   margin-bottom: 16px;
 }
 .logobuo {

@@ -29,7 +29,7 @@ function Login() {
   return (
     <section className="login-page">
       <div className="login-brand">
-        <h1>TaskFlow</h1>
+        <h1>Task</h1><h1 className='colorbu'>Flow</h1>
       </div>
 
       <h1 className="login-title">Log in to your account</h1>
